@@ -250,15 +250,6 @@ export default function Dashboard() {
             <span style={{ fontStyle: "italic", color: "var(--rose)" }}>with confidence.</span>
           </h1>
 
-          <p style={{ fontSize: 16, maxWidth: 400, lineHeight: 1.75, marginBottom: 10, color: "var(--ink-2)" }}>
-            Hard decisions aren't hard because you don't know.
-            They're hard because{" "}
-            <strong style={{ color: "var(--ink)", fontWeight: 600 }}>everything feels important.</strong>
-            {" "}Decify helps you sort that out.
-          </p>
-
-          <RotatingPrompt />
-
           <div className="btn-row" style={{ marginTop: 24 }}>
             <button className="btn btn-rose btn-lg" onClick={() => navigate("/create")}>
               Start a new decision
