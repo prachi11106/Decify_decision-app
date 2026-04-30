@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useDecision } from "../context/DecisionContext";
-import logoImg from "../assets/decify-logo.png";
+import { useDecision } from "../Context/DecisionContext";
+import logoImg from "../assets/Decify-logo.png";
 
 const LINKS = [
   { label: "Home",         path: "/" },

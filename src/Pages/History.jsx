@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDecision } from "../context/DecisionContext";
-import { useDebounce } from "../hooks/useDebounce";
-import { calculateScores, getBestOption } from "../utils/Decision";
+import { useDecision } from "../Context/DecisionContext";
+import { useDebounce } from "../Hooks/UseDebounce";
+import { calculateScores, getBestOption } from "../Utils/Decision";
 
 export default function History() {
   const navigate = useNavigate();

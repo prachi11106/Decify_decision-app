@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDecision } from "../context/DecisionContext";
+import { useDecision } from "../Context/DecisionContext";
 
 /* Smart criteria suggestions per decision type */
 const CRITERIA_SUGGESTIONS = {

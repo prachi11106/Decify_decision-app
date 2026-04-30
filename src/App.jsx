@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import Navbar from "./components/Navbar";
-import ErrorBoundary from "./components/ErrorBoundary";
-import Footer from "./components/Footer";
+import Navbar from "./Components/Navbar";
+import ErrorBoundary from "./Components/ErrorBoundary";
+import Footer from "./Components/Footer";
 
-const Dashboard      = lazy(() => import("./pages/Dashboard"));
-const CreateDecision = lazy(() => import("./pages/CreateDecision"));
-const Result         = lazy(() => import("./pages/Result"));
-const History        = lazy(() => import("./pages/History"));
+const Dashboard      = lazy(() => import("./Pages/Dashboard"));
+const CreateDecision = lazy(() => import("./Pages/CreateDecision"));
+const Result         = lazy(() => import("./Pages/Result"));
+const History        = lazy(() => import("./Pages/History"));
 
 function Loader() {
   return (

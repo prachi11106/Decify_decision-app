@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useCallback } from "react";
-import { calculateScores, getBestOption } from "../utils/Decision";
+import { calculateScores, getBestOption } from "../Utils/Decision";
 
 const Ctx = createContext(null);
 

@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useMemo, useState, useEffect } from "react";
-import { useDecision } from "../context/DecisionContext";
-import { useQuote } from "../hooks/useQuote";
-import ModernChart from "../components/ModernChart";
+import { useDecision } from "../Context/DecisionContext";
+import { useQuote } from "../Hooks/UseQuote";
+import ModernChart from "../Components/ModernChart";
 
 /* ── Rotating decision prompts ── */
 const PROMPTS = [

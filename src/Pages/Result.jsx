@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMemo, useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Cell } from "recharts";
-import { calculateScores, getBestOption, getConfidence, explainWinner } from "../utils/Decision";
+import { calculateScores, getBestOption, getConfidence, explainWinner } from "../Utils/Decision";
 
 const MEDALS = ["🥇", "🥈", "🥉"];
 
