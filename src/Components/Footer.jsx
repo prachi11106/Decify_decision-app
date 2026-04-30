@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logoImg from "../assets/decify-logo.png";
+import logoImg from "../assets/Decify-logo.png";
 
 const NAV_PRODUCT = [
   { label: "Home",         path: "/"       },
