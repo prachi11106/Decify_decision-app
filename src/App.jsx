@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -19,23 +19,21 @@ function Loader() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="page-shell">
-        <Navbar />
-        <main className="page-body">
-          <ErrorBoundary>
-            <Suspense fallback={<Loader />}>
-              <Routes>
-                <Route path="/"        element={<Dashboard />} />
-                <Route path="/create"  element={<CreateDecision />} />
-                <Route path="/result"  element={<Result />} />
-                <Route path="/history" element={<History />} />
-              </Routes>
-            </Suspense>
-          </ErrorBoundary>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="page-shell">
+      <Navbar />
+      <main className="page-body">
+        <ErrorBoundary>
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              <Route path="/"        element={<Dashboard />} />
+              <Route path="/create"  element={<CreateDecision />} />
+              <Route path="/result"  element={<Result />} />
+              <Route path="/history" element={<History />} />
+            </Routes>
+          </Suspense>
+        </ErrorBoundary>
+      </main>
+      <Footer />
+    </div>
   );
 }
