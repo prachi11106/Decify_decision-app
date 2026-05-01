@@ -2,16 +2,18 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useDecision } from "../Context/DecisionContext";
 import logoImg from "../assets/Decify-logo.png";
+import { NavLink } from "react-router-dom";
 
 const LINKS = [
-  { label: "Home",         path: "/" },
+  { label: "Home", path: "/" },
   { label: "New decision", path: "/create" },
-  { label: "History",      path: "/history" },
+  { label: "History", path: "/history" },
+  { label: "About", path: "/about" }, // ← ADDED
 ];
 
 export default function Navbar() {
   const { dark, toggleDark } = useDecision();
-  const navigate     = useNavigate();
+  const navigate = useNavigate();
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 

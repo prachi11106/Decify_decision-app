@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import Navbar from "./Components/Navbar";
 import ErrorBoundary from "./Components/ErrorBoundary";
 import Footer from "./Components/Footer";
+import About from "./pages/About";
 
 const Dashboard      = lazy(() => import("./Pages/Dashboard"));
 const CreateDecision = lazy(() => import("./Pages/CreateDecision"));
@@ -29,6 +30,7 @@ export default function App() {
               <Route path="/create"  element={<CreateDecision />} />
               <Route path="/result"  element={<Result />} />
               <Route path="/history" element={<History />} />
+              <Route path="/about" element={<About />} />
             </Routes>
           </Suspense>
         </ErrorBoundary>
