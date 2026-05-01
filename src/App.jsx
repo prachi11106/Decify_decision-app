@@ -3,12 +3,12 @@ import { lazy, Suspense } from "react";
 import Navbar from "./Components/Navbar";
 import ErrorBoundary from "./Components/ErrorBoundary";
 import Footer from "./Components/Footer";
-import About from "./pages/About";
 
 const Dashboard      = lazy(() => import("./Pages/Dashboard"));
 const CreateDecision = lazy(() => import("./Pages/CreateDecision"));
 const Result         = lazy(() => import("./Pages/Result"));
 const History        = lazy(() => import("./Pages/History"));
+const About          = lazy(() => import("./Pages/About"));
 
 function Loader() {
   return (
